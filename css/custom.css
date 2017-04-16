@@ -1,3 +1,16 @@
+#app {
+		position: relateve;
+}
+
+#footer {
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		width: 100px;
+		display: table;
+		text-align: center;
+}
+
 .column-header {
 		border-bottom: 2px solid gray;
 		margin-bottom: 20px;
