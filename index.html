@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title>RGB HEX converter</title>
+		<script src="https://unpkg.com/vue@2.2.6"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/foundation/6.3.1/css/foundation-flex.min.css" />
+		<link rel="stylesheet" href="css/custom.css" />
+	</head>
+	<body>
+		<div id="app">
+			<div class="row">
+				<div class="large-4 small-4 columns">
+					<div class="text-center column-header">
+						<h2>RGB</h2>
+					</div>
+					<div class="column-content">
+						<div class="input-block">
+							<form>
+								<div class="row">
+									<div class="large-12 medium-12 small-12 columns">
+										<label>RGB code
+											<input id="rgb-input" v-model="rgbColor" type="text" placeholder="150 150 150">
+										</label>
+									</div>
+									<div class="large-12 medium-12 small-12 columns text-center">
+										<button v-on:click="copyRgb" type="button" class="success button">Copy</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="large-4 small-4 columns">
+					<div class="text-center column-header">
+						<h2>COLOR</h2>
+					</div>
+					<div class="color-block" v-bind:style="{backgroundColor: bgColor}">
+					</div>
+				</div>
+				<div class="large-4 small-4 columns">
+					<div class="text-center column-header">
+						<h2>HEX</h2>
+					</div>
+					<div class="column-content">
+						<div class="input-block">
+							<form>
+								<div class="row">
+									<div class="large-12 medium-12 small-12 columns">
+										<label>HEX code
+											<input id="hex-input" type="text" v-model="hexColor" placeholder="FFFFFF">
+										</label>
+									</div>
+									<div class="large-12 medium-12 small-12 columns text-center">
+										<button v-on:click="copyHex" type="button" class="success button">Copy</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="js/app.js"></script>
+</html>
