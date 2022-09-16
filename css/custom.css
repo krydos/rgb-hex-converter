@@ -5,8 +5,7 @@
 #footer {
 		position: absolute;
 		bottom: 0;
-		right: 50%;
-		width: 100px;
+                width: 100%;
 		display: table;
 		text-align: center;
 }
